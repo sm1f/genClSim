@@ -10,10 +10,8 @@
 #include "common.h"
 
 template<class STATE>
-class StateMachine
+class StateMachine : public SemBase
 {
-  typedef STATE (Fn_StateMachine_GET)();
-
  public:
   StateMachine() {}
   virtual ~StateMachine() {}
