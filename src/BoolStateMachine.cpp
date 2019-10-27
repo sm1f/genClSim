@@ -2,12 +2,6 @@
 // All rights reserved.
 
 
-#include "BoolStateMachine.h"
-
-BoolStateMachine::BoolStateMachine()
-{
-}
-
 
 
 

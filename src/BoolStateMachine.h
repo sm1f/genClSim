@@ -7,11 +7,11 @@
 #include "common.h"
 #include "StateMachine.h"
 
-
-class BoolStateMachine<STATE> : public StateMachine<State>
+template<class STATE>
+class BoolStateMachine : public StateMachine<State>
 {
  public:
-  BoolStateMachine();
+  BoolStateMachine() {}
   virtual ~BoolStateMachine() {}
 };
 

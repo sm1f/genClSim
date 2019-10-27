@@ -8,6 +8,7 @@
 #define __StateMachine_H__
 
 #include "common.h"
+#include "SemBase.h"
 
 template<class STATE>
 class StateMachine : public SemBase
@@ -17,7 +18,8 @@ class StateMachine : public SemBase
   virtual ~StateMachine() {}
 
   virtual STATE getState() { return m_state; }
-  virtual STATE setState(STATE newState) { m_state = newState; return m_state; }
+  virtual STATE setState(STATE newState)
+  { m_state = newState; return m_state; }
   
  private:
   STATE m_state;
